@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+    <div class="contenido">
+        <header>
+            <img src="imagenes/logo-alura.png">
+        </header>
+        <main>
+            <section class="principal">
+                <div id="divCapa1" class="div-capa1">
+                    <button id="btnIniciar" class="bt-iniciar">Iniciar juego</button>
+                    <button id="btnNuevaPalabra" class="bt-nueva-palabra">Agregar nueva palabra</button>
+                </div>
+
+                <div id="divCapa2" class="div-capa2">
+                    <input id="inpAgregarPalabra" class="inp-agrega-palabra" placeholder="Ingrese una palabra">
+                    <label id="lb-informativo" class="lb-informativo"><span>❕</span> Máx. de 8 letras, sin caracteres especiales</label>
+                    <button id = "btnGuardar" class="btn-guardar">Guardar y jugar con esta palabra</button>
+                    <button id = "btnCancelar" class="btn-cancelar">Cancelar</button>
+                </div>
+
+                <div id="divCapa3" class="div-capa3">
+                    
+                    <canvas id="canvasHorca" class="canvas-horca" width="300px" height="200px"></canvas>
+                    <canvas id="canvasLineas" class="canvas-lineas" width="300px" height="40px"></canvas>
+                    <canvas id="canvasLetrasIncorrectas" class="canvas-letras-incorrectas" width="300px" height="40px"></canvas>
+                    <input id="inpValidaLetra" class="inp-validar-letras" placeholder="Ingrese su letra aquí">
+                    <button id="btnNuevo" class="btn-capa3">Nuevo juego</button>
+                    <button id="btnDesistir" class="btn-capa3">Desistir</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p id="parDev" class="par-dev">Desarrollado por Nicolás Peralta</p>
+                <a href="https://github.com/Nicolaasp40" target="_blank" ><img id="imgFooter" class="img-footer" src="imagenes/Logo-GitHub.png"></a>
+                <a href="https://www.linkedin.com/in/nicolas-peralta-0a5799214/" target="_blank"><img id="imgFooter" class="img-footer" src="imagenes/Logo-linkedin2.png"></a>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="ahorcado.js"></script>
+    <script src="horca.js"></script>
+</body>
+</html>

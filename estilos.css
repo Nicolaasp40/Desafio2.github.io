@@ -1,0 +1,294 @@
+body{
+    background-image: url(imagenes/bosque\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-color: #F3F5FC;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenido{
+    position: relative;
+    min-height: 100vh;
+}
+
+main{
+    padding-bottom: 65px;
+}
+
+.div-capa2{
+    display: none;
+}
+.div-capa3{
+    display: none;
+}
+.inp-agrega-palabra{
+    border-style: none;
+    outline: none;
+}
+.inp-validar-letras{
+    border-style: none;
+    outline: none;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(203, 219, 238, 0.2);
+    width: 100%;
+    height: 60px;
+}
+footer div{
+    display: block;
+    width:fit-content;
+    margin: 15px auto;
+}
+.par-dev{
+    display: inline;
+    color:white;
+    font-size: 0.8em;
+    vertical-align:middle;
+    max-height: 1em;
+}
+.img-footer{
+    display: inline;
+    width: 30px;
+    height: 30px; 
+    vertical-align: middle;
+}
+
+
+@media all and (min-width: 100px){
+    body{
+        width: 100%;
+    }
+    header{
+        margin: 6%;
+    }
+    .bt-iniciar{
+        display: block;
+        width: 85%;
+        height: 105px;
+        margin: 170px auto 20px auto;
+        border-radius: 24px;
+        background-color: #0A3871;
+        color: white;
+    }
+    .bt-nueva-palabra{
+        display: block;
+        width: 74%;
+        height: 67px;
+        margin: 0px auto 70px auto;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+    }
+    
+    .inp-agrega-palabra{
+        display: block;
+        width: 84%;
+        height: 48px;
+        margin: 110px 6% 210px 6%;
+        font-size: 25px;
+        color: #0A3871;
+        background-color: #F3F5FC;
+    }
+    
+    .lb-informativo{
+        margin-left:6%;
+        color: white;
+        font-size: 0.7rem;
+    }
+    
+    .btn-guardar{
+        display: block;
+        width: 90%;
+        height: 67px;
+        margin: 16px 5% 24px 5%;
+        border-radius: 24px;
+        background-color: #0A3871;
+        color: white;
+        border-color: #0A3871;
+    }
+    
+    .btn-cancelar{
+        display: block;
+        width: 90%;
+        height: 67px;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+    }
+    
+    
+    .canvas-horca{
+        display: block;
+        margin: 10px auto 30px auto;
+    }
+    .canvas-lineas, .canvas-letras-incorrectas{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .inp-validar-letras{
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        background-color: #F3F5FC;
+        text-align: center;
+        border-style: none;
+    }
+    .btn-capa3{
+        display: block;
+        width: 90%;
+        height: 67px;
+        border-radius: 24px;
+    }
+    
+    .div-capa2 button:nth-child(1n), .div-capa3 button:nth-child(1n){
+        background-color: #0A3871;
+        color: white;
+        margin: 10px 5% 16px 5%;
+    }
+    
+    .div-capa2 button:nth-child(2n), .div-capa3 button:nth-child(2n){
+        border-color: #0A3871;
+        color: #0A3871;
+        background-color: #F3F5FC;
+        margin: 10px auto 70px auto;
+    }  
+}
+
+@media all and (min-width: 640px){
+    body{
+        width: 100%;
+    }
+    .bt-iniciar{
+        width: 50%;
+        margin: 170px auto 20px auto;
+
+    }
+    .bt-nueva-palabra{
+        width: 48%;
+        margin: 0px auto 70px auto;
+    }
+
+    .inp-agrega-palabra{
+        display: block;
+        width: 60%;
+        margin: 150px 0 150px 6%;
+    }
+    
+    .lb-informativo{
+        display: block;
+        margin: 0 40% 0 6%;
+        color: white;
+        font-size: 1em;
+    }
+    
+    .btn-guardar{
+        display:inline-block;
+        width: 41.7%;
+        margin: 16px 2% 70px 6%;
+    }
+    .btn-cancelar{
+        display:inline-block;
+        width: 41.7%;
+        margin: 16px 6% 70px 2%;
+    }
+    .canvas-horca{
+        margin-top: 10px;
+    }
+    .btn-capa3{
+        display: inline-block;
+        width: 41.6%;
+        margin: 0 auto;
+    }
+    
+    /*.div-capa3 button:nth-child(1n){
+        margin: 0px 2% 0px 6%;
+    }
+    
+    .div-capa3 button:nth-child(2n){
+        margin: 0px 6% 0px 2%;
+    } */
+    
+}
+
+@media all and (min-width: 992px){
+    body{
+        width: 100%;
+    }
+    header{
+        margin: 3% 6%;
+    }
+    .bt-iniciar{
+        width: 22%;
+        margin: 10% auto 30px auto;
+
+    }
+    .bt-nueva-palabra{
+        width: 20%;
+        margin: 0px auto 70px auto;
+    }
+
+    .inp-agrega-palabra{
+        display: block;
+        width: 30%;
+        margin: 120px 0 150px 24%;
+    }
+    
+    .lb-informativo{
+        display: block;
+        margin: 0 0 0 24%;
+        color: white;
+    }
+    .btn-guardar{
+        display: inline;
+        width: 23.7%;
+    }
+    .btn-cancelar{
+        display: inline-block;
+        width: 23.7%;
+    }
+    .div-capa2 button:nth-child(1n){
+        margin: 10px 2% 60px 24%;
+    }
+    
+    .div-capa2 button:nth-child(2n){
+        margin: 10px 0% 60px 2%;
+    } 
+    .canvas-horca{
+        margin-top: 0px;
+    }
+    .inp-validar-letras{
+        display: block;
+        width: 20%;
+    }
+    .btn-capa3{
+        display: inline-block;
+        width: 23.7%;
+    }
+    
+    .div-capa3 button:nth-child(1n){
+        margin: 16px 2% 70px 24%;
+    }
+    
+    .div-capa3 button:nth-child(2n){
+        margin: 16px 24% 70px 2%;
+    } 
+}
+.principal button{
+    transition: 0.5s;
+}
+.principal button:hover{
+    box-shadow: 0px 0px 10px #07c1fa;;
+    text-shadow: 4px 4px 4px #07c1fa;
+    font-size: .8em;
+}
+.principal button:active{
+    transform: scale(1.05);
+}
